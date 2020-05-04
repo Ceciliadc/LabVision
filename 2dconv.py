@@ -1,4 +1,6 @@
-'''Your code will take an input tensor input with shape (n, iC, H, W) and a kernel kernel with shape (oC, iC, kH, kW). It needs then to apply a 2D convolution over input, using kernel as kernel tensor and no bias, using a stride of 1, no dilation, no grouping, and no padding, and store the result in out. Both input and kernel have dtype np.float32.'''
+'''Your code will take an input tensor input with shape (n, iC, H, W) and a kernel kernel with shape (oC, iC, kH, kW). 
+It needs then to apply a 2D convolution over input, using kernel as kernel tensor and no bias, using a stride of 1, no dilation, 
+no grouping, and no padding, and store the result in out. Both input and kernel have dtype np.float32.'''
 
 import random
 import numpy as np
