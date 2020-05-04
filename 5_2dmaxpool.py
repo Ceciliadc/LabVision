@@ -4,7 +4,8 @@
     a kernel height kH and a kernel width kW;
     a stride s;
 
-It needs then to apply a 2D max-pooling over input, using the given kernel size and stride, and store the result in out. Input input has dtype np.float32.'''
+It needs then to apply a 2D max-pooling over input, using the given kernel size and stride, and store the result in out. 
+Input input has dtype np.float32.'''
 
 import random
 import numpy as np
