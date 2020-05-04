@@ -1,6 +1,7 @@
-'''Given an input grayscale image im (a np.ndarray with shape (H, W) and dtype np.uint8), write a code which computes the Otsu threshold for im stores the result in out.
+'''Given an input grayscale image im (a np.ndarray with shape (H, W) and dtype np.uint8), write a code which computes the Otsu threshold 
+for im stores the result in out.
 
-Notice: beware of how the threshold is defined in the Otsu formulas. Your output should be compliant with our first definition of threshold (see slides).'''
+Notice: beware of how the threshold is defined in the Otsu formulas. Your output should be compliant with our first definition of threshold.'''
 
 import numpy as np
 from skimage import data
