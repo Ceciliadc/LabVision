@@ -1,6 +1,9 @@
-'''Your code will take as input a mini-batch of feature maps input (a np.ndarray tensor with dtype np.float32 and shape (n, H, W)), and a template template (a np.ndarray with dtype np.float32 and shape (kH, kW)). It then needs to compare the template against all samples in the mini-batch in a sliding window fashion, and store the result in out.
+'''Your code will take as input a mini-batch of feature maps input (a np.ndarray tensor with dtype np.float32 and shape (n, H, W)), 
+and a template template (a np.ndarray with dtype np.float32 and shape (kH, kW)). It then needs to compare the template against all samples 
+in the mini-batch in a sliding window fashion, and store the result in out.
 
-out will have shape (n, oH, oW), where oH=iH-(kH-1) and oW=iW-(kW-1), and out[i, :, :] will contain the similarity between the template and the i-th feature map at all valid locations. Use the sum of squared differences as comparison function.'''
+out will have shape (n, oH, oW), where oH=iH-(kH-1) and oW=iW-(kW-1), and out[i, :, :] will contain the similarity between the template and 
+the i-th feature map at all valid locations. Use the sum of squared differences as comparison function.'''
 
 import random
 import numpy as np
