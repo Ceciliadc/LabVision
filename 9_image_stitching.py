@@ -1,13 +1,14 @@
-'''Your code will take as input two color images im_a and im_b (np.ndarray with dtype np.uint8 and shape (3, H, W)), depicting the same scene from two different perspectives.
+'''Your code will take as input two color images im_a and im_b (np.ndarray with dtype np.uint8 and shape (3, H, W)), depicting the same 
+scene from two different perspectives.
 
 You then need to:
-
     Manually identify (at least) four corresponding pairs of points
     Estimate the homography between the first and the second image using the detected point pairs.
     Warp the second image using the estimated transformation matrix.
     "Merge" the two images in a single one by sticking one on top of the other.
 
-The code is expected to show the final result using pyplot (e.g. calling the imshow function). When doing this, pay attention to the axis order (their format is (H, W, 3)).
+The code is expected to show the final result using pyplot (e.g. calling the imshow function). When doing this, pay attention to the axis 
+order (their format is (H, W, 3)).
 
 If you employ OpenCV functions, recall that the OpenCV format is also (H, W, 3).'''
 
