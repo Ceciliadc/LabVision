@@ -39,5 +39,6 @@ for t in range(oT):
     for i in range(oH):
         for j in range(oW):
             out[:, :, t, i, j] = torch.sum(torch.unsqueeze(input[:, :, t:t+kT, i:i+kH, j:j+kW], 1) * torch.unsqueeze(kernel, 0), (-1, -2, -3, -4)) + bias
+            #faccio la somma sugli ultimi 4 assi (-1 oW, -2 oH, -3 oT, -4 oC)
 
 print(out)
