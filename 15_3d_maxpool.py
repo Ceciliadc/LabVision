@@ -32,5 +32,6 @@ for t in range(oT):
             out[:, :, t, row, col] = torch.max(
                         torch.max(
                             torch.max(input[:, :, s*t:s*t+kT, s*row:s*row+kH, s*col:s*col+kW], -3)[0], -2)[0], -1)[0]
+                        #faccio 3 max innestati, uno per ogni asse (-3 oT, -2 oH, -1 oW)
 
 print(out)
