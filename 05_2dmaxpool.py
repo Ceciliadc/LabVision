@@ -27,4 +27,4 @@ out = np.zeros((n, iC, oH, oW))
 
 for row in range(oH):
     for col in range(oW):
-        out[:, :, row, col] = np.max(input[:, :, row:row+kH, col:col+kW])
+        out[:, :, row, col] = np.max(input[:, :, s*row:s*row+kH, s*col:s*col+kW])
